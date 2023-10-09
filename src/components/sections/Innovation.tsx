@@ -72,6 +72,7 @@ const Innovation = () => {
 
                 };
                 const responseObj = await sendRequestToApi({ endpoint: responseJsonEndpoint, params: paramsObj, type: 1 });
+                let _articles:Article[] = [];
                 responseObj.uids.map((id: string | number) => {
                     let obj = responseObj[id];
                     let article = {
@@ -83,8 +84,9 @@ const Innovation = () => {
                         elocationid: obj.elocationid,
                         illustrationUrl: "https://picsum.photos/330/300",
                     }
-                    setArticle([...articles, article]);
+                    _articles.push(article);
                 })
+                setArticle(_articles);
             }
         } catch (error) {
             console.error(error);
