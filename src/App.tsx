@@ -1,6 +1,5 @@
 
 import './App.css'
-import NewsMedical from './components/sections/NewsMedical'
 import Footer from './components/elements/Footer'
 import NavBar from './components/elements/NavBar'
 import Innovation from './components/sections/Innovation'

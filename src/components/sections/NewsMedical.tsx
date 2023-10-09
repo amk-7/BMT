@@ -86,5 +86,3 @@ const NewsMedical = () => {
 </section>
   )
 }
-
-export default NewsMedical;
