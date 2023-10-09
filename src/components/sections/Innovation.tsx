@@ -15,14 +15,14 @@ const Innovation = () => {
     const responseJsonEndpoint = "esummary.fcgi";
     const apiKey = "d851057773356ef6e86a446fb1323592c007";
 
-    const [ currentPage, setCurrentPage ] = useState(1);
-    const nextPage = () => {
-        setCurrentPage(currentPage + 1);
-    };
+    // const [ currentPage, setCurrentPage ] = useState(1);
+    // const nextPage = () => {
+    //     setCurrentPage(currentPage + 1);
+    // };
     
-     const prevPage = () => {
-        setCurrentPage(currentPage - 1);
-    };
+    //  const prevPage = () => {
+    //     setCurrentPage(currentPage - 1);
+    // };
 
     const [articles, setArticle] = useState<Article[]>([]);
 
