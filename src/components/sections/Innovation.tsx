@@ -26,7 +26,7 @@ const Innovation = () => {
 
     const [articles, setArticle] = useState<Article[]>([]);
 
-    const { register, handleSubmit, watch, formState: { errors }, } = useForm<SearchInput>();
+    const { register, handleSubmit } = useForm<SearchInput>();
     const onSubmit: SubmitHandler<SearchInput> = (data) => {
         console.log(data);
         getInnovation(data.search);
