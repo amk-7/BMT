@@ -3,7 +3,7 @@ import Card from "../elements/Card";
 import { Article } from "../model";
 import { SubmitHandler, useForm } from "react-hook-form";
 import axios, { AxiosResponse } from "axios";
-import { Pagination } from "flowbite-react";
+// import { Pagination } from "flowbite-react";
 
 interface SearchInput {
     search: string;
